@@ -448,7 +448,9 @@ img {
 	/* min-height:100%; */
 }
 
-
+.ht215 img{
+	height: 215px !important;
+}
 /** **/
 
 * {
@@ -723,10 +725,10 @@ a {
   
   @media only screen and (max-width: 600px) {
 	a.arrow__btn {
-	  display: none;
+	  /* display: none; */
 	}
 	.wrapper {
-		display: none;
+ /* display: none; */
 	}
 
 	.wrapper section .item {
@@ -804,3 +806,59 @@ a {
 		}
 	  }
 
+/* carausel start */
+.carousel {
+	width: 80vw;
+	height: 380px;
+	border-radius: 3px;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+.carousel:hover .controls {
+	opacity: 1;
+}
+.carousel .controls {
+	opacity: 0;
+	display: flex;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	justify-content: space-between;
+	width: 100%;
+	z-index: 99999;
+	transition: all ease 0.5s;
+}
+.carousel .controls .control {
+	margin: 0 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.7);
+	opacity: 0.5;
+	transition: ease 0.3s;
+	cursor: pointer;
+}
+.carousel .controls .control:hover {
+	opacity: 1;
+}
+.carousel .slides {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-36%);
+	display: flex;
+	width: 100%;
+	transition: 1s ease-in-out all;
+}
+.carousel .slides .slide {
+	min-width: 100%;
+	min-height: 250px;
+	height: auto;
+}
+
+
+/* carausel ends */
