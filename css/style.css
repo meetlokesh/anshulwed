@@ -934,8 +934,7 @@ blockquote::after {
 }
 
 .flip-card-front {
-  background: url("https://www.darkfantasyadwithsrk.in/images/mobilemiddle.png")
-    no-repeat center 70px;
+  background: url("../assets/img/mobilemiddle.png") no-repeat center 70px;
   z-index: 1;
   width: 100%;
   height: 100%;
