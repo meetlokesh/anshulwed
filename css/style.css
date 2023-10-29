@@ -1,3 +1,9 @@
+:root {
+  --golden: #ffd286;
+  --white: #ffffff;
+  --purple: #674ea7;
+  --linear-red: radial-gradient(red, #170002);
+}
 @-webkit-keyframes fall {
   0% {
     opacity: 0.9;
@@ -344,7 +350,7 @@
 }
 
 .sakura {
-  background: #674ea7;
+  background: var(--purple);
 }
 
 /*******************************/
@@ -390,7 +396,7 @@ img {
   font-style: normal;
   font-size: 65px;
   margin: 30px 0;
-  color: #674ea7;
+  color: var(--purple);
   padding: 10px;
 }
 
@@ -410,7 +416,7 @@ img {
   font-weight: bolder;
   font-style: normal;
   font-size: 32px;
-  color: #674ea7;
+  color: var(--golden);
   margin: 16px;
   text-align: center;
 }
@@ -420,7 +426,7 @@ img {
     font-weight: bolder;
     font-style: normal;
     font-size: 26px;
-    color: #674ea7;
+    color: var(--golden);
     margin: 12px;
     text-align: center;
   }
@@ -431,7 +437,7 @@ img {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 24px;
-  color: #674ea7;
+  color: var(--purple);
   margin-top: 5px;
 }
 
@@ -496,7 +502,7 @@ body {
 .venue {
   width: auto;
   height: auto;
-  background-color: #674ea7;
+  background-color: var(--purple);
   border-radius: 16px;
   text-align: center;
   color: #fff;
@@ -758,7 +764,7 @@ blockquote::before {
   font-size: 75px;
   line-height: 0px;
   top: 50px;
-  color: #674ea7;
+  color: var(--purple);
   animation: dancing 1s linear infinite;
   display: inline-block;
   transform: rotate(13deg);
@@ -911,6 +917,7 @@ blockquote::after {
   transition: transform 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: var(--linear-red);
 }
 
 .flip-card:hover .flip-card-inner {
@@ -927,15 +934,13 @@ blockquote::after {
 }
 
 .flip-card-front {
-  background-color: #f5df2e;
-  background: linear-gradient(
-    67.7deg,
-    rgb(252, 185, 125) -0.9%,
-    rgb(245, 231, 106) 22.8%,
-    rgb(160, 236, 208) 50.3%,
-    rgb(57, 178, 209) 75.5%,
-    rgb(183, 174, 193) 100.2%
-  );
+  background: url("https://www.darkfantasyadwithsrk.in/images/mobilemiddle.png")
+    no-repeat center 70px;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: top center;
 }
 
 .flip-card-back {
